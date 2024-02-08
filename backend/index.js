@@ -9,7 +9,8 @@ app.use(express.json())
 // Routes
 const PinRoute = require("./routes/pins")
 app.use("/api/pins", PinRoute)
-
+const UserRoute = require("./routes/users")
+app.use("/api/users", UserRoute)
 
 app.use((req, res, next) => {
     console.log(`Received ${req.method} request at ${req.url}`);
