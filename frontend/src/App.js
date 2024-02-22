@@ -4,7 +4,7 @@ import mapboxgl from 'mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
 import ReactMapGL from 'react-map-gl';
 
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiY29keXNoYXJtYSIsImEiOiJjbHM2aTB4YW4wd3c1MnBucmZwb3R0aWdpIn0.2-nmMKx09tjnsgD9QDLFTQ';
+mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 // Change to pull from .env after testing
 
 function App() {
